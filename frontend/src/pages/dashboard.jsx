@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Chatbot from './components/chatbot';
 import { 
   Bell, 
   User, 
@@ -152,11 +153,11 @@ const Dashboard = () => {
                 <p className="text-blue-100">Ready for today's therapy session?</p>
               </div>
               <div className="flex space-x-3">
-                <button className="bg-white bg-opacity-20 hover:bg-opacity-30 px-4 py-2 rounded-lg flex items-center space-x-2 transition-colors">
+                <button className="bg-white bg-opacity-20 hover:bg-opacity-30 px-4 py-2 rounded-lg flex items-center space-x-2 transition-colors text-blue-500 font-semibold">
                   <Calendar className="w-4 h-4" />
                   <span>Book Appointment</span>
                 </button>
-                <button className="bg-white bg-opacity-20 hover:bg-opacity-30 px-4 py-2 rounded-lg flex items-center space-x-2 transition-colors">
+                <button className="bg-white bg-opacity-20 hover:bg-opacity-30 px-4 py-2 rounded-lg flex items-center space-x-2 transition-colors text-blue-500 font-semibold">
                   <Video className="w-4 h-4" />
                   <span>Join Live Session</span>
                 </button>
@@ -339,6 +340,8 @@ const Dashboard = () => {
           </div>
         </div>
       </div>
+
+      <Chatbot />
     </div>
   );
 };
