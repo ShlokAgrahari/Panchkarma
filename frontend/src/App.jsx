@@ -1,16 +1,18 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
 import Dashboard from './pages/dashboard'
+import PanchakarmaWebsite from './pages/landingpage'
+import { Routes, Route } from 'react-router-dom'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className='w-full h-screen mt-0'>
-      <Dashboard />
-    </div>   
+    <div className='w-screen h-screen mt-0'>
+      <Routes>
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/" element={<PanchakarmaWebsite />} />
+      </Routes>
+    </div>
   )
 }
 
