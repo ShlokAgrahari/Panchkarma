@@ -67,7 +67,7 @@ const Dashboard = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen w-screen bg-gray-50">
       {/* Top Navbar */}
       <nav className="bg-white shadow-sm border-b border-gray-200 px-6 py-4">
         <div className="flex items-center justify-between">
@@ -76,7 +76,7 @@ const Dashboard = () => {
               <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
                 <Heart className="w-5 h-5 text-white" />
               </div>
-              <h1 className="text-xl font-bold text-gray-900">HealthCare+</h1>
+              <h1 className="text-xl font-bold text-gray-900">PanchKarma</h1>
             </div>
           </div>
 
@@ -89,9 +89,9 @@ const Dashboard = () => {
                 onChange={(e) => setLanguage(e.target.value)}
                 className="bg-transparent text-sm font-medium text-gray-700 border-none outline-none"
               >
-                <option value="English">English</option>
-                <option value="Hindi">Hindi</option>
-                <option value="Spanish">Spanish</option>
+                <option value="English"  className='text-gray-600 font-medium px-2'>English</option>
+                <option value="Hindi" className='text-gray-600 font-medium px-2'>Hindi</option>
+                <option value="Spanish" className='text-gray-600 font-medium px-2'>Spanish</option>
               </select>
             </div>
 
