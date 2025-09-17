@@ -1,7 +1,7 @@
 import { StreamClient } from "@stream-io/node-sdk";
 
-const apiKey = "agrqaxj4guaj";
-const apiSecret = "fzmwezpz44qp3h73z6yfjev96h45xn2kzsz68epm7d282ufpgfewgt95x9d5r6t5";
+const apiKey = process.env.STREAM_API_KEY;
+const apiSecret = process.env.STREAM_API_SECRET;
 
 export const generateToken = (req, res) => {
   try {
